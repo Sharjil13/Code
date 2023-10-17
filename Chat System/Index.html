@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Chat App</title>
+</head>
+<body>
+    <nav id="navbar">
+        <img src="img/logo.png" alt="Alt">
+        <ul class="nav-ul">
+            <li class="list-item"><a href="#">Home</a></li>
+            <li class="list-item"><a href="#">About</a></li>
+        </ul>
+    </nav>
+    <div class="chatbox">
+        <ul id="test"></ul>
+        <!-- <h4>
+            <span id="sender">Name</span>
+            <p id="sender_message">Sender</p>
+        </h4>
+        <h4>
+            <span id="reciver">Name</span>
+            <p id="reciver_message">Reciver</p>
+        </h4> -->
+    </div>
+
+    <form onsubmit="return sendMessage();" class="message">
+        <input type="text" id="text-area" placeholder="Enter Message ">
+        <button id="button" type="submit">Send</button>
+    </form>
+
+   
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+<script src="firebase.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
